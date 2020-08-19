@@ -1,0 +1,15 @@
+<html>
+  <title>Datalist</title>
+  <body>
+    <a href = "/">Home</a>
+    <img src="/img/logo.png" style="align: center;" height="10%" width="15%">
+    <ul>
+      {%for i in range(0, len)%}
+      <li>
+        <a href="/open/{{data[i][2]}}" style="text-color:green"> {{data[i][1]}} </a>
+        <br>
+      </li>
+      {%endfor%}
+    </ul>
+  </body>
+</html>
